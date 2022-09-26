@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # index route
+  get '/students', to: 'students#index'
+
+  # grades route
+  get '/students/grades', to: 'students#grades'
+
+  #highest grade route
+  get '/students/highest-grade', to: 'students#highest_grade'
 end
+
+
